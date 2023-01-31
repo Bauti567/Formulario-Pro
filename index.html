@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://kit.fontawesome.com/d5afe0c556.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fa20d25896.js" crossorigin="anonymous"></script>
+    <title>Formulario || Pro - Juan Bautista</title>
+</head>
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <!--Para identificar el grupo de los usuarios-->
+
+            <!--Grupo de usuario-->
+            <div class="form__grupo" id="grupo__usuario">
+                <label for="usuario" class="formulario__label">Usuario</label>
+                <div class="fromulario__grupo-input">
+                    <input type="text" name="usuario" id="usuario" class="formulario__input" placeholder="usuario">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
+                </div>
+                <p class="formulario__input-error">El usuario debe tener de 4 a 16 dígitos, y solo puede contener etc...</p>
+            </div>
+
+            <!--Grupo de Nombre--> 
+            <div class="form__grupo" id="grupo__nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="fromulario__grupo-input">
+                    <input type="text" name="nombre" id="nombre" class="formulario__input" placeholder="Nombre">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El nombre debe tener de 4 a 16 dígitos, y solo puede contener etc...</p>
+            </div>
+
+            <!--Grupo de Contraseña-->
+            <div class="form__grupo" id="grupo__contraseña">
+                <label for="contraseña" class="formulario__label">Contraseña</label>
+                <div class="fromulario__grupo-input">
+                    <input type="password" name="contraseña" id="contraseña" class="formulario__input" placeholder="contraseña">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe tener de 4 a 12 digitos</p>
+            </div>
+
+            <!--Grupo contraseña 2-->
+            <div class="form__grupo" id="grupo__contraseña">
+                <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
+                <div class="fromulario__grupo-input">
+                    <input type="text" name="contraseña2" id="contraseña2" class="formulario__input" placeholder="contraseña">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Las contraseñas ingresadas no coinciden</p>
+            </div>
+
+            <div class="form__grupo" id="grupo__correo">
+                <label for="correo" class="formulario__label">Correo Electrónico</label>
+                <div class="fromulario__grupo-input">
+                    <input type="email" name="correo" id="correo" class="formulario__input" placeholder="E-mail">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El correo solo puede tener #L-_</p>
+            </div>
+
+            <div class="form__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono</label>
+                <div class="fromulario__grupo-input">
+                    <input type="text" name="telefono" id="telefono" class="formulario__input" placeholder="telefono">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El telefono solo puede contener numeros</p>
+            </div>
+
+            <!--Grupo para términos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="formulario__validacion-estado fa-sharp fa-solid fa-triangle-exclamation"></i><b>Error:</b> Por favor rellena correctamente el formulario</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__validacion-estado formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
+            </div>
+        </form>
+    </main>
+    <script src="form.js"></script>
+</body>
+</html>
