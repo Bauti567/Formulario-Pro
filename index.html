@@ -20,7 +20,7 @@
                 <label for="usuario" class="formulario__label">Usuario</label>
                 <div class="fromulario__grupo-input">
                     <input type="text" name="usuario" id="usuario" class="formulario__input" placeholder="usuario">
-                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark "></i>
+                    <i class="fa-solid fa-circle-xmark formulario__validacion-estado"></i>
                 </div>
                 <p class="formulario__input-error">El usuario debe tener de 4 a 16 dígitos, y solo puede contener etc...</p>
             </div>
@@ -46,10 +46,10 @@
             </div>
 
             <!--Grupo contraseña 2-->
-            <div class="form__grupo" id="grupo__contraseña">
+            <div class="form__grupo" id="grupo__contraseña2">
                 <label for="contraseña2" class="formulario__label">Repetir contraseña</label>
                 <div class="fromulario__grupo-input">
-                    <input type="text" name="contraseña2" id="contraseña2" class="formulario__input" placeholder="contraseña">
+                    <input type="password" name="contraseña2" id="contraseña2" class="formulario__input" placeholder="contraseña">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Las contraseñas ingresadas no coinciden</p>
@@ -87,7 +87,7 @@
 
             <div class="formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="formulario__btn">Enviar</button>
-                <p class="formulario__mensaje-exito" id="formulario__validacion-estado formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
+                <p class="formulario__validacion-estado formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se ha enviado correctamente</p>
             </div>
         </form>
     </main>
